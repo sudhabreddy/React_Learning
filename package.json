@@ -1,0 +1,26 @@
+{
+  "name": "react_2026",
+  "version": "1.0.0",
+  "description": "learn react",
+  "keywords": [
+    "react"
+  ],
+  "homepage": "https://github.com/sudhabreddy/React_Learning#readme",
+  "bugs": {
+    "url": "https://github.com/sudhabreddy/React_Learning/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sudhabreddy/React_Learning.git"
+  },
+  "license": "ISC",
+  "author": "Sudha Mettu",
+  "type": "commonjs",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  }
+}
