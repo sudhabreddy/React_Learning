@@ -28,6 +28,21 @@ once the command completed, you will see package.json file.
 
 12. Config driven UI
 
+13. react hooks : normal js functions
+
+useState() : used maintain the state of variables
+useEffect()
+
+14. Virtual DOM
+
+React uses Reconsilation algorithm which is also called react fiber.
+
+diff algorithms : react works on virtual DOM. React compares new virtual DOM with older virtual DOM and then render the virtual dom to actual DOM.
+15. whenever a state variable value changes , react rerenders virual dom 
+
+16. virtual dom is the jsx code object
+
+
 
 
 
