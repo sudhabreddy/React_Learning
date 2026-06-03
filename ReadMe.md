@@ -56,6 +56,28 @@ server side routing
 
 16. Dynamic routing bansed on query parameters.
 17. https://corsproxy.io/
+18. https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/ 
+life cycle events.
+19. class component
+
+1. Constuctor
+2. render
+3. mount
+
+1. parent constructor
+2. parent render
+3. child1 constructor
+4. child1 render
+5. child2 constructor
+6. child2 render
+7. child1 mount
+8. child 2 mount
+9. parent mount
+
+20. API calls are usually made in mount life cycle event
+
+
+
 
 
 
