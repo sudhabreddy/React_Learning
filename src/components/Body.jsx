@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import RestaurantCard from "./RestuarantCard";
-
+import RestaurantMenu from "./RestaurantMenu";
 
 
 const Body = () => {
@@ -41,6 +41,11 @@ useEffect(() => {
     setListOfRestaurants(restaurantList);
 }, []);
 
+useEffect(() => {
+    setSearchText("");
+}, []);
+
+
 const onSearchChange = (e) => {
     const value = e.target.value;
     setSearchText(value);
@@ -67,6 +72,7 @@ const onSearch = () => {
             {listOfRestaurants.map((restaurant) => (
                 <RestaurantCard key={restaurant.id} restaurant={restaurant} />
             ))}
+            <RestaurantMenu></RestaurantMenu>
         </div>
     ); 
 };
