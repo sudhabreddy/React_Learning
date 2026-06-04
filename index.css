@@ -1,31 +1,3 @@
-.header
-{
-    display: flex;
-    justify-content: space-between;
-     border: 1px solid black;
-    }
+@import "tailwindcss";
 
-.logo
-{
-    width: 200px;
-}
 
-.navItems > ul {
-    display: flex;
-    padding: 0px 20px;
-    list-style-type: none;
-}
-
-.navItems > ul > li {
-    list-style-type: none;
-    margin: 10px;
-    padding: 10px;
-}
-    
-restCard
-{
-    border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
-    width: 200px;
-}

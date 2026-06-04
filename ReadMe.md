@@ -74,7 +74,24 @@ life cycle events.
 8. child 2 mount
 9. parent mount
 
-20. API calls are usually made in mount life cycle event
+20. API calls are usually made in mount life cycle event.
+
+21. class component life cycle events should not be compared with functional components hooks.
+
+22. unmounting is important in SPA as it is important to unloaded the things.
+ex: setTimer
+
+23. Bundling/ chunking / lazy loading / code splitting / on demand loading, all refers to same code spliting
+
+24. lazy module is used to load the code on demand. Suspend is  used as fallback UI untill the code loads on demand.
+
+have a look at how Grocery module is implemented.
+
+25. Shimmer UI is used to show like progerssbar. refer youtube 
+26. Sass vs scss
+
+27 Chakra UI, MUI ui, bootstrap, ant design , tailwind ui.
+
 
 
 

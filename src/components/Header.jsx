@@ -13,6 +13,9 @@ const Heading = () => {
                     <li><Link to="/about">About Us</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
                     <li>Cart </li>
+                    <li><Link to="/example">Example Class Component</Link></li>
+                    <li><Link to="/exampleFunc">Example Functional Component</Link></li>
+                    <li><Link to="/grocery">Grocery List</Link></li>
                 </ul>
             </div>
         </div>
