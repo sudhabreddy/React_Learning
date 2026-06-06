@@ -1,9 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
+import { addItem, removeItem } from "../utils/cartSlice"
+import { useDispatch } from "react-redux";
 
 const ExampleFunctionalComponent = () => {
     const [count, setCount] = useState(0);
-
+    const dispatch = useDispatch();
    
     // This effect runs only once when the component is mounted
     useEffect(() => {
@@ -21,10 +23,23 @@ const ExampleFunctionalComponent = () => {
         };
     }, []);
 
+    const handleClick = () =>
+    {
+        dispatch(addItem("Pizza)"));
+    };
+
+     const handleRemove = () =>
+    {
+        dispatch(removeItem("Pizza)"));
+    };
+
+
     return (
         <div>
             <h1>Count: {count}</h1>
-            <button onClick={() => setCount(count + 1)}>Increment</button>
+            <button className="border-2" onClick={() => setCount(count + 1)}>Increment</button>
+             <button className="border-2" onClick={handleClick}>Add to Cart</button>
+              <button className="border-2" onClick={handleRemove}>Remove from Cart</button>
         </div>
     );
 };

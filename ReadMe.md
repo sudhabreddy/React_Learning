@@ -92,6 +92,45 @@ have a look at how Grocery module is implemented.
 
 27 Chakra UI, MUI ui, bootstrap, ant design , tailwind ui.
 
+28.Higher order component: wrapper component. takes a component as input, modifies it and returns a component.
+
+29. add react developer tool to debug the application.
+
+30. controlled and uncontrolled components
+
+40. Map, filter, reduce
+
+41. props drilling : values passed from parent to child and childe to its child.
+
+even if parent component does not use the props and its child needs props data, you end up in passing data to parent component.
+
+45. to avoid props drilling, use context. ex: to keep info about logged in user.
+
+    createContext from react. 
+46. using the context in class component <userContext.Consumer>
+<userContaext.Provider>
+
+47. Redux is state management library for react.
+its not mandatory. use it only it required.
+redux is not part of react. it's a separate library. 
+its's not the only library used for state management. Zustand is also one of the lib for same purpose.
+
+48. Using Redux, its easy to debug the application using redux dev tools.
+
+49. Redux can be used with any other lib as well.
+
+React-redux - old way of writing code.
+
+50. Redux-toolkit is new way of writing code.
+
+# Redux toolkit
+- install redux toolkit (@reduxjs/toolkit) and react-redux
+- Build store
+- Connect store to app
+- create cart slice
+- dispatch action
+- read data in cart using selector
+
 
 
 

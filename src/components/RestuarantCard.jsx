@@ -14,3 +14,16 @@ const RestaurantCard = ({ restaurant }) => {
 };
 
 export default RestaurantCard;
+
+export const PromotedRestaurantCard = ({ restaurant }) => {
+    const { name, cuisines = [] } = restaurant; 
+    
+    return (
+        <div className="restCard promoted">
+
+            <img src={RESTAURANT_IMAGE_URL} alt="food" />
+            <h2>{name} (Promoted)</h2>
+            <h3>{cuisines.join(", ")}</h3>
+        </div>
+    );
+};

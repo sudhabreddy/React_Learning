@@ -1,16 +1,21 @@
 
 import { useState, useEffect } from "react";
-import RestaurantCard from "./RestuarantCard";
+import RestaurantCard, {PromotedRestaurantCard} from "./RestuarantCard";
 import RestaurantMenu from "./RestaurantMenu";
 
-
 const Body = () => {
+
+       useEffect(() => {
+        console.log("Body Component Mounted");
+    }, []);
+
 
 const restaurantList = [
     {
         id:1,
         name: "Pizza Hut",  
         cuisines: ["Pizza", "Italian"],
+        promoted: true,
     },
     {
         id:2,
@@ -21,16 +26,19 @@ const restaurantList = [
         id:3,
         name: "Sushi World",
         cuisines: ["Sushi", "Japanese"],
+        promoted: false,
     },
     {   
         id:4,
         name: "Taco Bell",
         cuisines: ["Tacos", "Mexican"],
+        proomoted: false,
     },
     {
         id:5,
         name: "Pasta Palace",
         cuisines: ["Pasta", "Italian"],
+        promoted: true,
     },
 ];
 
@@ -69,10 +77,14 @@ const onSearch = () => {
             value={searchText} 
             onChange={onSearchChange} />
             <button onClick={onSearch}>Search</button>
-            {listOfRestaurants.map((restaurant) => (
-                <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+            { listOfRestaurants.map((restaurant) => (
+                restaurant.promoted ? (
+                    <PromotedRestaurantCard key={restaurant.id} restaurant={restaurant} />
+                ) : (
+                    <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+                )
             ))}
-            <RestaurantMenu></RestaurantMenu>
+            
         </div>
     ); 
 };

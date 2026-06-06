@@ -10,15 +10,37 @@ import Error from "./components/Error";
 import ExampleClassComponent from "./components/ExampleClassComponent";
 import ExampleFunctionalComponent from "./components/ExampleFunctionalComponent";
 //import Grocery from "./components/Grocery";
+import UserContext from "./utils/UserContext";
+import { useState,useEffect} from "react";
+import { Provider } from "react-redux";
+import appStore from "./utils/appStore";
 
 const Grocery = lazy(()=> import("./components/Grocery"));
 
 const AppLayout = ()=>{
+    
+const [loggedInUser, setLoggedInUser] = useState({
+    name: "",
+    email: ""
+});
+
+useEffect(()=>{
+    // Simulate fetching user data from an API
+     setLoggedInUser({
+            name: "John Doe",
+            email: "sudha.mettu@gmail.com"
+        });
+},[]);
+
     return(
-    <div>
+    <Provider store={appStore}>
+    <div>       
         <Heading></Heading>
+        <UserContext.Provider value={{ loggedInUser }}>
         <Outlet></Outlet>
+        </UserContext.Provider>
     </div>  
+    </Provider>
     );
 };
 
