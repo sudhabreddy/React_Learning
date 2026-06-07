@@ -131,6 +131,8 @@ React-redux - old way of writing code.
 - dispatch action
 - read data in cart using selector
 
+while subscribing to a store, subscribig to right portion of store is very imortant for performance. 
+
 
 
 

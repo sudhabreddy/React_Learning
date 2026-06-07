@@ -37,9 +37,9 @@ const ExampleFunctionalComponent = () => {
     return (
         <div>
             <h1>Count: {count}</h1>
-            <button className="border-2" onClick={() => setCount(count + 1)}>Increment</button>
-             <button className="border-2" onClick={handleClick}>Add to Cart</button>
-              <button className="border-2" onClick={handleRemove}>Remove from Cart</button>
+            <button className="p-2 m-2 border-2 rounded-lg" onClick={() => setCount(count + 1)}>Increment</button>
+             <button className="p-2 m-2 border-2 rounded-lg" onClick={handleClick}>Add to Cart</button>
+              <button className="p-2 m-2 border-2 rounded-lg" onClick={handleRemove}>Remove from Cart</button>
         </div>
     );
 };
